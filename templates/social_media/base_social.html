@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>social media</title>
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/bootstrap-grid.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/bootstrap-grid.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/bootstrap-reboot.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/bootstrap-reboot.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/all.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'js/bootstrap.bundle.js' %}">
+    <link rel="stylesheet" href="{% static 'js/bootstrap.bundle.min.js' %}">
+    <link rel="stylesheet" href="{% static 'js/bootstrap.js' %}">
+    <link rel="stylesheet" href="{% static 'js/bootstrap.min.js' %}">
+    <link rel="stylesheet" href="{% static 'js/jquery-3.7.0.js' %}">
+
+    <!-- the start of some java script files included and effects  -->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/jquery-1.6.3.min.js' %}"></script>
+    <script src="{% static 'js/jquery-3.7.0.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'js/jquery-3.7.0.js' %}">
+
+
+
+
+</head>
+<body>
+    <nav class="navbar">
+       <div class="container">
+        <a class="navbar-brand" href="{% url 'home' %}">MUHIMBILI SOCIAL MEDIA</a>
+         <ul class="nav navbar-nav navbar-right">
+         {% if user.is_authenticated %}
+          <li><a href="{% url 'POSTS_SM:create' %}">POST</a></li>
+          <li><a href="{% url 'GROUPS_SM:all' %}">GROUPS</a></li>
+          <li><a href="{% url 'GROUPS_SM:create' %}">CREATE GROUPS</a></li>
+          <li><a href="{% url 'ACCOUNTS:logout'%}">log-out</a></li>
+         {% else %} 
+          <li><a href="{% url 'GROUPS_SM:all' %}">GROUPS</a></li>
+          <li><a href="{% url 'ACCOUNTS:login'%}">log-in</a></li>
+          <li><a href="{% url 'ACCOUNTS:signup'%}">sign-up</a></li>
+         {% endif %}
+        </ul>
+       </div>
+    </nav>
+
+
+<div class="container">
+{% block content %}
+
+
+{% endblock %}
+</div>
+    
+</body>
+</html>

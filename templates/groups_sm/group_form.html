@@ -1,0 +1,16 @@
+<!-- this page is for the user which wants to create a new group -->
+
+{% extends "groups_sm/group_base.html" %}
+{% load bootstrap3 %}
+
+{% block group_content %}
+
+<h4>create a new group!</h4>
+
+ <form action="{% url 'GROUPS_SM:create' %}" method="POST">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    <input type="submit" class="btn btn-primary btn-large" value="create">
+ </form>
+
+{% endblock %}

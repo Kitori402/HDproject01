@@ -1,0 +1,435 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/bootstrap-grid.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/bootstrap-grid.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/bootstrap-reboot.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/bootstrap-reboot.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/all.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'js/bootstrap.bundle.js' %}">
+    <link rel="stylesheet" href="{% static 'js/bootstrap.bundle.min.js' %}">
+    <link rel="stylesheet" href="{% static 'js/bootstrap.js' %}">
+    <link rel="stylesheet" href="{% static 'js/bootstrap.min.js' %}">
+    <link rel="stylesheet" href="{% static 'js/jquery-3.7.0.js' %}">
+
+
+
+
+</head>
+
+<body>
+    <!-- the navigation with a logo -->
+    <nav class="navbar bg-body-tertiary">
+        <div class="container">
+            <p class="navbar-brand">
+                <img src="" alt="Bootstrap" width="30" height="24">
+            <h1>the tittle goes here</h1>
+            </p>
+        </div>
+    </nav>
+    <!-- the end of the navigation bar with a logo -->
+
+
+
+    <!-- we need to modify the navbars -->
+    <!-- the start of the side bar -->
+    <nav class="navbar navbar-default navbar-static-left" data-spy="affix" data-offset-left="20">
+        <div class="main-container d-flex">
+            <div class="sidebar" id="side_nav">
+                <div class="header-box px-2 pt-3 pb-4">
+                    <h2 class="fs-4"><span class="bg-white text-dark rounded shadow px-2 me-2">MP</span><span
+                            class="text-white">MUHIMBILI PHARMACY</span></h2>
+                    <button class="btn d-block close-btn px-1 py-0 text-white"><i
+                            class="fal fa-stream"></i>stomach</button>
+                </div>
+                <ul class="list-unstyled px-2">
+                    <li class=""><a href="#" class="text-decoration-none">fever</a></li>
+                    <li class=""><a href="#blood" class="text-decoration-none">blood circulation</a></li>
+                    <li class=""><a href="#" class="text-decoration-none">degistive</a></li>
+                    <li class=""><a href="#" class="text-decoration-none">respiratory</a></li>
+                    <li class=""><a href="#" class="text-decoration-none">malaria</a></li>
+                    <li class=""><a href="#" class="text-decoration-none">reproductive</a></li>
+                    <li class=""><a href="#" class="text-decoration-none"><i
+                                class="fa-regular fa-messages"></i>other</a>
+                    </li>
+                </ul>
+                <hr class="h-color mx-2">
+
+                <ul class="list-unstyled px-2">
+                    <li class=""><a href="#" class="text-decoration-none"><i class="fal fa-bars"></i> contacts</a></li>
+                    <li class=""><a href="#" class="text-decoration-none"> <i class="fal fa-bell"></i> see more</a></li>
+                </ul>
+
+            </div>
+
+            <!-- the start of another top nav bar  -->
+            <div class="content">
+                <nav class="navbar navbar-expand-md navbar-light bg-light">
+                    <div class="container-fluid">
+                        <div class="d-flex justify-content-between d-md-none d-block d-block">
+                            <button class="btn px-1 py-0 open-btn me-2">click me</button>
+                            <a class="navbar-brand fs-4" href="#"><span
+                                    class="bg-dark rounded px-2 py-0">Mp</span>muhimbili
+                                pharmacy</a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation"><span
+                                class="navbar-toggle-icon">MP</span>
+                        </button>
+                        <div classs="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">profile</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="dashboard-content px-3 pt-4">
+                    <h2 class="fs-5">dashboard</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus maiores deleniti atque ipsa
+                        repudiandae similique laborum molestias sunt porro sit nulla quis enim, facere ut repellat
+                        asperiores architecto et sequi.</p>
+
+                    <!-- we going in alpha START -->
+                    <!-- the digestive drug section -->
+                    <section id="digestion">
+                        <div class="container">
+                            <h5 style="text-align: center;">DIGESTIVE SYSTEM MEDICINES</h5>
+                            <h6 style="text-align: center;">stomach pain , vomiting , diahorea </h6>
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural lead-in to
+                                                additional content. This content is a little bit longer.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This card has supporting text below as a natural
+                                                lead-in to additional
+                                                content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural lead-in to
+                                                additional content. This card has even longer content than the first to
+                                                show that equal
+                                                height action.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- the  END of digestive drug section -->
+
+
+
+                    <!-- the START of  section for reproductive problem drugs -->
+                    <section id="reproduction">
+                        <div class="container">
+                            <h5 style="text-align: center;">REPRODUCTIVE SYSTEM MEDICINES</h5>
+                            <h6 style="text-align: center;">stomach pain , vomiting , diahorea </h6>
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural lead-in to
+                                                additional content. This content is a little bit longer.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This card has supporting text below as a natural
+                                                lead-in to additional
+                                                content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural lead-in to
+                                                additional content. This card has even longer content than the first to
+                                                show that equal
+                                                height action.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- the END of section for reproductive problem drugs -->
+
+                    <!-- the START of  section for respiratory problem drugs -->
+                    <section id="respiratory">
+                        <div class="container">
+                            <h5 style="text-align: center;">RESPIRATORY SYSTEM MEDICINES</h5>
+                            <h6 style="text-align: center;">stomach pain , vomiting , diahorea </h6>
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural lead-in to
+                                                additional content. This content is a little bit longer.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This card has supporting text below as a natural
+                                                lead-in to additional
+                                                content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural lead-in to
+                                                additional content. This card has even longer content than the first to
+                                                show that equal
+                                                height action.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- the END of section for respiratory problem drugs -->
+
+                    <!-- the START of  section for blood problem drugs -->
+                    <section id="blood">
+                        <div class="container">
+                            <h5 style="text-align: center;">BLOOD SYSTEM MEDICINES</h5>
+                            <h6 style="text-align: center;">stomach pain , vomiting , diahorea </h6>
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural lead-in to
+                                                additional content. This content is a little bit longer.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This card has supporting text below as a natural
+                                                lead-in to additional
+                                                content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural lead-in to
+                                                additional content. This card has even longer content than the first to
+                                                show that equal
+                                                height action.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- the END of section for blood problem drugs -->
+
+
+
+                    <!-- alpha CLOSED END -->
+
+                </div>
+            </div>
+            <!-- the end of the other topnav bar -->
+        </div>
+    </nav>
+
+    <!-- the start of some java script files included and effects  -->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/jquery-1.6.3.min.js' %}"></script>
+    <script src="{% static 'js/jquery-3.7.0.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'js/jquery-3.7.0.js' %}">
+
+    <script>
+        $(".sidebar ul li").on('click', function () {
+            $(".sidebar ul li.active").removeClass('active');
+            $(this).addClass('active');
+        });
+
+        $('.open-btn').on('click', function () {
+            $('.sidebar').addClass('active');
+        });
+
+        $('.close-btn').on('click', function () {
+            $('.sidebar').removeClass('active');
+        })
+    </script>
+
+    <!-- the end of some java script files included and effects      -->
+
+
+
+
+
+
+
+
+
+    <!-- the style of the side bar -->
+    <style>
+        .content {
+            min-height: 100vh;
+            width: 100%;
+        }
+
+        #side_nav {
+            background: #000;
+            min-width: 250px;
+            max-width: 250px;
+            transition: all o.3s;
+        }
+
+        hr.h-color {
+            background: #eee;
+        }
+
+        .sidebar li.active {
+            background: #eee;
+            border-radius: 10px;
+        }
+
+        .sidebar li.active a,
+        .sidebar li.active a:hover {
+            color: #000;
+        }
+
+        .sidebar li a {
+            color: #fff;
+        }
+
+        @media(max-width: 767px) {
+            #side_nav {
+                margin-left: -250px;
+                position: fixed;
+                min-height: 100vh;
+                z-index: 1;
+            }
+
+            #side_nav.active {
+                margin-left: 0;
+            }
+
+        }
+    </style>
+    <!-- the end of the style for side bar -->
+
+    <!-- the end of the side bar -->
+
+
+
+
+</body>
+
+</html>

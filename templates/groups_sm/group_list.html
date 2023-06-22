@@ -1,0 +1,90 @@
+<!-- this page displays the list of groups present -->
+
+{% extends "groups_sm/group_base.html"%}
+
+<!-- the start of the pregroup block -->
+{% block pregroup %}
+
+<div class="col-md-4">
+    <div class="content">
+        {% if user.is_authenticated %}
+          <h2>Welcome Back 
+            <a href="{% url 'POSTS_SM:for_user' username=user.username %}">
+            @{{user.username}}
+          </a>
+         </h2>
+        {% endif %}
+
+        <h2>GROUPS</h2>
+        <p>welcome to the groups page !</p>
+    </div>
+
+    {% if user.is_authenticated %}
+      <a href="{% url 'GROUPS_SM:create' %}" class="btn btn-md btn-fill btn-warning">
+        <span class="glyphicon glyphicon-plus-sign">Create new Group </span>
+      </a>
+    {% endif %}
+
+</div>
+{% endblock %}
+<!-- the end of the pregroup block -->
+
+
+
+
+<!-- the start of the group_content block -->
+{% block group_content %}
+
+<div class="col-md-8">
+    <div class="list-group">
+        {% for group in object_list %}
+          <a class='list-group-item' href="{% url 'GROUPS_SM:single' slug=group.slug %}">
+            <h3 class="title list-group-item-heading">{{group.name}}</h3>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="badge">{{group.members.count}}</span>
+                        member{{group.members.count|pluralize}}
+                    </div>
+                    <div class="col-md-4">
+                        <span class="badge">{{group.members.count}}</span>
+                        post{{group.members.count|pluralize}}
+                    </div>
+                </div>
+            </div>
+          </a>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
+<!-- the end of the  group_content block  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
